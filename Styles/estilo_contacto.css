@@ -1,0 +1,636 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    font-family: 'Roboto', sans-serif;;
+    color: white;
+    
+}
+
+#contenedor{
+    width: 90%;
+    background: #74ebd5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #43C6AC, rgba(28, 25, 94, 0.35));  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #43C6AC, rgba(28, 25, 94, 0.35)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    max-width: 1200px;
+    margin: 0 auto;   
+    overflow: hidden;
+}
+
+html{
+    font-size: 40px;
+}
+
+
+h1{
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+h4{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0.1em 0.5em 0.1em;
+}
+
+h5{
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: white;
+}
+
+p{
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin: 0rem 0.5rem 1rem 0.5rem;
+    text-align: center;
+}
+
+
+.menu{
+    background-color: #c9c9c9;
+    height: 3.75rem;
+    width: 100%;
+    font-size: 0.6rem;
+    font-weight: 700;
+    padding: 0 4.9em;
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    transition: ease-in 0.4s;
+    z-index: 100;
+    justify-content: space-between;
+}
+
+.menu img{
+    width: 3.3rem;
+    height: auto;
+    margin-right: 0.8rem;
+ }
+
+.opciones_menu{
+    list-style: none;
+    display: flex;
+    transition: all ease-in-out 0.2s;
+    z-index: 100;
+    margin-right: 2.2rem;
+}
+
+.opciones_menu li a{
+    color: white;
+    text-decoration: none;
+    margin: 0 0 0 0.8rem;
+    padding: 0em;   
+    list-style: none;
+    display: block;
+    text-align: center;
+}
+
+.opciones_menu li a:hover, li.active{
+    color: rgba(241, 238, 238, 0.85);
+    font-size: 1.1em;
+    transition: 0.2s ease-in;
+}
+
+.btn_menu{
+    cursor: pointer;
+    display: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 40px !important;
+    color: white !important;
+    z-index: 100;
+    transition: all ease-in-out 0.4s;
+}
+
+.ul.show{
+    top: 2rem;
+}
+
+.active{
+    text-decoration: underline 4px;
+    text-underline-position: under;
+}
+
+.section_contacto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.section_extra{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imagen{
+    max-width: 30%;
+    display: flex;
+    margin-bottom: 3rem; 
+}
+
+.imagen img{
+    width: 6em;
+    height: auto;
+    
+}
+
+.contacto{
+    max-width: 65%;  
+}
+
+
+h1{
+    margin: 1rem 0em 1rem 0em;
+    align-items: center;
+    text-align: center;  
+    width: 100%;
+}
+
+.contact_form{
+    display: flex;
+    flex-direction:row; 
+    max-width: 100%;  
+}
+
+
+::placeholder {
+    color: rgba(241, 238, 238, 0.99);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding-left: 0.2em;
+}
+
+::placeholder :hover{
+    color: rgba(241, 238, 238, 0.85);
+    transition: 0.2s ease-in;
+}
+
+#nombre{
+    display: inline-flexbox;
+    width: 47.5%;
+    font-size: 1rem;
+    background-color: rgba(206, 204, 247, 0.05);
+    border: 2px solid white;
+    border-radius: 0.125em;
+    margin: 0em 0.5em 1em 0em;
+}
+
+#correo{
+    display: inline-flexbox;
+    width: 47.5%;
+    font-size: 1rem;
+    background-color: rgba(206, 204, 247, 0.05);
+    border: 2px solid white;
+    border-radius: 0.125em;
+    margin: 0 0 1em 0;
+}
+
+#mensaje{
+    display: flex;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 99%;
+    height: 3.6em;
+    background-color: rgba(206, 204, 247, 0.05);
+    border: 2px solid white;
+    border-radius: 0.125em;
+    margin-bottom: 1em;
+}
+
+#submit{
+    display: flex;
+    background-color: rgba(206, 204, 247, 0.05);
+    border: 2px solid white;
+    border-radius: 0.125em;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.125em;
+    text-align: center;
+}
+
+#submit:hover{
+    font-size: 1rem;
+    box-shadow: -4px 4px 12px #4d4848;
+    border: 3px solid rgba(238, 239, 241, 0.85);
+    cursor: pointer;
+    color: rgba(238, 239, 241, 0.85);
+    transition: 0.2s ease-in;
+}
+
+.section_footer{
+    display: flex;
+    justify-content: space-evenly;
+    
+    background-color: rgba(201, 201, 201, 0.95);
+    border: 2px solid white;
+}
+
+.section_footer h5{
+    margin: 0.5em 0 0 0;
+}
+
+.section_footer img{
+    width: 3.8em;
+    height: 3.8em;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-top: 1em;
+}
+
+.servicios_footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.25em;
+}
+
+.serviciosF{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.25rem;
+}
+
+.servicios_footer a{
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 0.375em;
+    cursor:pointer;
+}
+
+.servicios_footer a:hover{
+    color: rgba(238, 239, 241, 0.85);
+    font-size: 0.8rem;
+    transition: 0.2s ease-in;
+}
+
+.redes_sociales{
+    max-width: 295px;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.redes_sociales h5{
+    text-align: center;
+    margin-bottom: 0.525rem;
+}
+
+.section_footer svg{
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 0.2em;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.section_footer svg:hover{  
+    border: 3px solid white;
+    transition: 0.2s ease-in;
+}
+
+.linkedin{
+   background-color: #43C6AC;
+}
+
+.linkedin1{
+    fill: white;
+    
+}
+
+.linkedin:hover{
+    fill: rgba(238, 239, 241, 0.85); 
+    transition: 0.2s ease-in;  
+}
+
+.linkedin1:hover{
+    fill: rgba(238, 239, 241, 0.85);   
+    transition: 0.2s ease-in;
+}
+
+.insta{
+    background-color: #43C6AC;
+    margin: 0 0.15em 0px 0.15em;
+}
+
+.instagram{
+    margin: 0 0.15em 0px 0.15em;
+    fill: white;
+}
+
+.insta:hover{
+    fill: rgba(238, 239, 241, 0.85); 
+    transition: 0.2s ease-in;  
+}
+
+.instagram:hover{
+    fill: rgba(238, 239, 241, 0.85);   
+    transition: 0.2s ease-in;
+}
+
+.yout{
+    background-color: #43C6AC;
+}
+
+.youtube{
+    fill: white;
+}
+
+.yout:hover{
+    fill: rgba(238, 239, 241, 0.85);  
+    transition: 0.2s ease-in; 
+}
+
+.youtube:hover{
+    fill: rgba(238, 239, 241, 0.85); 
+    transition: 0.2s ease-in;  
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width:1200px) {
+
+    #contenedor{
+        width: 100%;
+    }
+    
+    h3{font-size: 1rem;}
+
+    .menu img{
+       width: 3.5rem;
+       height: auto;
+    }
+
+    .contact_form img{
+        width: 4.8rem;
+        height: 3.75rem;
+        margin: 2rem 3.5rem 0 0.5rem;
+    }
+
+    .section_contacto h1{
+        
+        font-size: 1rem;
+    }
+
+    #nombre, #correo, #mensaje{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;      
+    }
+
+    #nombre{
+        margin: 0em 0em 1em 0em;
+    }
+
+    .section_footer img{
+        height: 2.6rem;
+        width: 2.6rem;
+    }
+
+    .section_footer svg{
+        height: 1.7rem;
+        width: 1.7rem;
+        align-items: center;
+    }
+
+    
+    .insta{
+        margin: 0 0 0px 0;
+    }
+
+    .section_footer a{
+        font-size: 0.65rem;
+    }
+}
+
+/*Menu responsive*/
+@media screen and (max-width:1000px) {
+    .menu{
+        height: 3em;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        
+    }
+
+    .btn_menu {
+        display: block;
+        width: 2rem;
+        height: 1rem;   
+        position: fixed; /*PROBANDO SI SE QUEDA FIJO ARRIBA*/ 
+        left: calc(100% - 120px);    
+    }
+
+    .opciones_menu{
+        position: fixed; /*Esto para poder sacarlo del viewport*/
+        background: #74ebd5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #43C6AC, rgba(28, 25, 94, 1));  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #43C6AC, rgba(28, 25, 94, 1));
+        top: 0;
+        left: 0;
+        width: 100%; /*para que ocupe todo el ancho del viewport*/ 
+        height: 100vh; /*para que el alto sea relativo al ato de la pantalla*/
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        clip-path: circle(0.0% at 100% 0);
+        transition: ease-in-out 0.4s;
+    }
+
+    .menu .menudos{
+        -webkit-clip-path: circle(150% at 99% 1%);
+        clip-path: circle(150% at 99% 1%);
+    }
+    .opciones_menu li{
+        margin: 1em 0 0 0;
+        line-height: 1em;
+    }
+
+    .opciones_menu li:hover{
+        background-color: rgba(206, 204, 247, 0.05);
+    }
+
+    .opciones_menu li a{
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+
+    .menu img{
+        display: none;
+    }
+
+    .imagen img{
+        width: 4.5em;
+        height: auto;
+    }
+
+    .contacto{
+        max-width: 80%;
+    }
+}
+
+
+@media screen and (max-width:750px) {
+    
+    h1{
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+
+    h2{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+
+    h5{
+        font-size: 0.8rem;
+    }
+
+    p{
+        font-size: 0.7rem;
+    }
+
+    .menu{
+        height: 3em;
+    }
+
+    .contacto{
+        margin-right: 0.4rem;
+    }
+
+    #nombre, #correo, #mensaje{
+        font-size: 0.7rem;
+    }
+
+    ::placeholder {
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+    
+    .section_footer img{
+        height: 2rem;
+        width: 2rem;
+        margin-top: 1.7em;
+    }
+
+    .serviciosF a{
+        font-size: 0.55rem;
+    }
+
+    .section_footer svg{
+        width: 1.5rem;
+        height: 1.5rem;
+        
+    }
+
+    .redes{
+        text-align: center;
+    }
+    #sentado{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:550px) {
+    
+    .menu{
+        height: 2.7em;
+    }
+
+    p{
+        font-size: 0.6rem;
+    }
+
+    .section_contacto{
+        align-items: center;
+    }
+
+    .contacto{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .imagen{
+        display: none;
+        width: 0;
+    }
+    .section_contacto h1{
+        margin: 0.75rem 0 0.5rem 0;
+    }
+    .section_contacto img{display: none;}
+
+    
+    ::placeholder {
+        font-size: 0.6rem;
+        font-weight: 600;
+    }
+    
+    #nombre, #correo, #mensaje{
+        font-size: 0.6rem;
+        margin-right: 0;
+        width: 100%;
+    }
+    
+    #submit{
+       
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+    
+    .section_footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 380px;
+        justify-content: start;
+    }
+
+    #writer{display: none;}
+
+    .servicios_footer{
+        max-width: 70%;
+        margin:0.5rem 0 0.5rem 0;
+    }
+
+    .servicios_footer h5{
+        margin: 0rem 0 0 0;
+        font-size: 0.9rem;
+    }    
+
+    .serviciosF{
+        margin: 0;
+    }
+
+    .servicios_footer a{
+        font-size: 0.6rem;    
+    }
+
+    .redes_sociales h5{
+        margin: 0rem 0 0.5rem 0;
+        font-size: 0.9rem;
+    }
+
+    .redes{
+       text-align: center;
+    }
+}
